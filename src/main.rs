@@ -14,7 +14,7 @@ fn panic(_info: &PanicInfo) -> ! {
 fn main(_image_handle: Handle, mut system_table: SystemTable<Boot>) -> Status {
     let stdout = system_table.stdout();
     stdout.clear().unwrap();
-    stdout.write_str("Hello, World!").unwrap();
+    stdout.write_str("Hello, from UEFI!").unwrap();
 
     loop {}
 }
